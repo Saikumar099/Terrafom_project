@@ -61,7 +61,11 @@ To remove all resources created by Terraform, run the following command:
 Explanation of Files:
 ----------------------
 provider.tf: Configures the AWS provider to allow Terraform to communicate with your AWS account.
+
 main.tf: Contains the core infrastructure setup, including the creation of an ALB, two EC2 instances, and a security group to allow traffic to the instances.
+
 outputs.tf: Defines the output for the ALB's DNS name, which you can use to access the load balancer.
+
 user_data1.sh: Script for the first EC2 instance. This script can output a unique string or message to indicate it's instance 1.
+
 user_data2.sh: Script for the second EC2 instance. This script can output a different message or string to indicate it's instance 2.
